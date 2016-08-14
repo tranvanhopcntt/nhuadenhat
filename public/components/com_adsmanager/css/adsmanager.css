@@ -1,0 +1,580 @@
+/*                                */
+/* Stylesheet for com_adsmanager  */
+/*                                */
+/*    (c) 2006 Thomas PAPIN       */
+/*         GPL License            */
+/*                                */
+/*     webmaster@joomprod.com       */
+/*                                */
+
+#adsmanager_fieldset form br {
+	clear: left;
+}
+.adsmanager_main_cat, .adsmanager_main_cat a:link, .adsmanager_main_cat a:visited {
+	font-size: 16px;
+	margin: 0px;
+	margin-top: 10px;
+	padding: 0px;
+	color: #000000;
+}
+.adsmanager_sub_cat, .adsmanager_sub_cat a:link, .adsmanager_sub_cat a:visited {
+	font-size: 11px;
+	font-family: arial;
+	margin-top: 2px;
+	padding: 0;
+	color: #7333B3;
+	font-weight: normal;
+	text-decoration: none;
+}
+.imgcat {
+	border : 0;
+}
+.adsmanager_footer {
+	font-size: 10px;
+	color: #555555;
+}
+.adsmanager_cat {
+	font-size: 10px;
+	color: #555555;
+}
+.adsmanager_pathway {
+	margin-bottom: 10px;
+}
+table.adsmanager_table {
+	background-color: #F7F7F7;
+	border: 1px solid #cccccc;
+	border-collapse: collapse;
+	width: 98%;
+}
+table.adsmanager_table th {
+	background-color: #EEEEEE;
+	border: 1px solid #cccccc;
+	text-align: center;
+	font-size: 11px;
+}
+table.adsmanager_table td {
+	border: 1px solid #cccccc;
+}
+.adsmanager_table td img.adimage {
+	float: left;/*padding-right: 8px;*/
+}
+.adsmanager_table td h2 {
+	font-size: 11px;
+	margin-bottom : 0px;
+	padding-bottom: 5px;
+}
+.adsmanager_table td {
+	text-align: left;
+	padding : 5px;
+}
+table.adsmanager_table tr td.right {
+	text-align: right;
+}
+table.adsmanager_topmenue {
+	background-color: #F7F7F7;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+}
+table.adsmanager_topmenue td {
+	border: 1px solid #cccccc;
+	color: #000000;
+	padding: 3px;
+	margin: 0px;
+	text-align: center;
+	font-size: 11px;
+}
+.adsmanager_search_title {
+	background: url(../images/system/title.png) no-repeat;
+	height: 24px;
+	color: #7333B3;
+	padding-top: 1px;
+	padding-left: 24px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.adsmanager_subtitle {
+	text-align : right;
+	margin-bottom: 2px;
+}
+.adsmanager_search_box {
+	position : relative;
+	width: 96%;
+	left: 2%;
+	border: 1px solid #CCCCCC;
+	color: #000000;
+	padding: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.adsmanager_box_module {
+	width: 95%;
+	/*border: 1px solid #333333;*/
+	color: #000000;
+	padding: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.adsmanager_box {
+	position : relative;
+	width: 75%;
+	left: 10%;
+	border: 1px solid #CCCCCC;
+	color: #000000;
+	padding: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.adsmanager_inner_box {
+	font-size: 12px;
+	color: #000000;
+	/*background-color: #EEEEEE;*/
+	padding: 5px;
+	text-align: right;
+}
+.adsmanager_inner_box tr td {
+	padding-right: 5px;
+}
+.adsmanager_search_box form {
+	display : inline;
+}
+.imgheading {
+	margin-right : 5px;
+}
+table.adsmanager {
+	width: 100%;
+	color: #000000;
+	border: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+}
+table.adsmanager_header {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+table.adsmanager_select {
+	/* width: 100%; */
+	color: #000000;
+	background-color: #F0F0F0;
+}
+div.adsmanager_ads {
+	color: #000000;
+	margin: 0px;
+}
+div.ads_background {
+	background-color: white;
+}
+div.adsmanager_top_ads {
+}
+div.adsmanager_top_ads h2 {
+	border-bottom: 1px solid #DDDDDD;
+}
+div.addetails_topright {
+	text-align : right;
+	font-size: 18px;
+	font-weight: bold;
+}
+div.adsmanager_ads_state {
+	text-align : right;
+}
+h2.adsmanager_ads_title {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+div.adsmanager_ads_main {
+
+}
+div.addetailsmain {
+	float: left;
+	margin-top:1em;	
+	width:100%
+}
+div.adsmanager_ads_desc {
+font-size: 12px;
+}
+div.adsmanager_ads_price {
+
+}
+div.adsmanager_ads_contact {
+
+}
+div.adsmanager_ads_image {
+	/*border-left: 1px solid #FFFFFF;
+	float: left;*/
+	/*width:30%;*/
+	/*padding: 5px; */
+}
+div.adsmanager_ads_image a {
+	/*display : block;	margin-top: 10px;
+	background: none repeat scroll 0 0 #FFFFFF !important;		*/
+}
+div.adsmanager_ads_image a img {
+	/*box-shadow: 0 2px 4px #808080;
+	background: none repeat scroll 0 0 #FFFFFF;
+	margin: 0 0 5px;
+	padding: 5px;
+	border: 1px solid #B0B0B0;*/
+}
+table.adsmanager_inner_box img {
+	box-shadow: 0 2px 4px #808080;
+	background: none repeat scroll 0 0 #FFFFFF;
+	margin: 0 0 5px;
+	padding: 5px;
+	border: 1px solid #B0B0B0;
+}
+.adimage {
+	background: none repeat scroll 0 0 #FFFFFF;
+	margin: 0 0 5px;
+	padding: 5px;
+	border: 1px solid #B0B0B0;
+	margin-right: 10px;
+}
+.adsmanager_spacer {
+	clear: both;
+}
+div.adsmanager_footer {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto 0 auto;
+}
+fieldset.adsmanager {
+	color: #000000;
+	border: 1px solid #CCCCCC;/* background_color: #555555; *//* padding: 5; */
+}
+legend.adsmanager {
+	color: #000000;
+	font-weight: bold;
+	border: 1px solid #CCCCCC;
+	/* background_color: #DDDDDD; */
+	padding: 10px;
+}
+.adsmanager {
+	border: 1px solid #CCCCCC;
+ //background-color: #F0F0F0;
+	margin: 2px;
+	padding: 2px;
+}
+.adsmanager_required {
+	border: 1px solid #CCCCCC;
+	background-color: #DDDDFF;
+	margin: 2px;
+	padding: 2px;
+}
+#adsmanager_fieldset label {
+	/* border: 1px solid #CCCCCC; */
+	width: 15%;
+	float: left;
+	margin: 2px;
+	padding: 2px;
+	text-align: right;
+}
+#adsmanager_fieldset label.right {
+	/* border: 1px solid #CCCCCC; */
+	width: 14em;
+	float: left;
+	margin: 5px;
+	padding: 2px;
+	text-align: left;
+}
+#adsmanager_writead_header {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#adsmanager_innermenu {
+	text-align: center !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+#home {
+	text-align: center !important;
+}
+#home td, #home tr {
+	border: 0;
+}
+#home img {
+	padding-right: 10px;
+}
+.pagelinks {
+	text-align: center!important;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pagelinks li {
+	display: inline;
+	padding: 2px 5px;
+	text-align: left;
+	border: solid 0px #eee;
+	margin: 0 2px
+}
+#currentimages {
+	list-style-type: none !important;
+	margin: 0;
+	padding: 0;
+}
+#currentimages li {
+	margin: 3px 3px 3px 0;
+	padding: 1px;
+	float: left;
+	text-align: center;
+	padding: 2px !important;
+}
+#home table {
+	margin-left: auto;
+	margin-right: auto;
+}
+table.adsmanager_table tr td.tdcenter {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center !important;
+}
+#home div {
+	text-align: center !important;
+}
+.adsmanager_fronttext {
+	text-align: center !important;
+}
+.list-footer, .list-footer div {
+	text-align: center !important;
+}
+.adsmanager_box_module {
+	text-align: center !important;
+}
+.adsmanager_box_module div {
+	text-align: center !important;
+}
+#writead_header1 {
+	display: inline;
+	border: 1px solid #CCCCCC;
+	background-color: #DDDDFF;
+	width: 7em;
+	margin: 5px;
+	padding: 2px;
+}
+#writead_header2 {
+	display: inline;
+	border: 1px solid #CCCCCC;
+
+	width: 7em;
+	margin: 5px;
+	padding: 2px;
+}
+/* v1.1.1 */
+.adsmanager_ver_list {
+	list-style: none;
+	text-align: left;
+	padding-left: 0px;
+}
+.adsmanager_ver_list li {
+	background-image: none;
+}
+.list_highlight {
+	background-color: #AAAAFF;
+}
+/*.trcategory____ {*/
+/*background-color:#AA00AA;*/
+/*}*/
+
+/*.trcategory____ td h2 a {*/
+/* font-weight: bold;*/
+/* font-size: 14px;*/
+/* color: #FFFFFF;*/
+/* text-decoration:underline;*/
+/*}*/
+
+.paymentmethod {
+	list-style: none;
+	margin: 10px;
+}
+.cats {
+	min-width: 300px;
+}
+.selected_cats {
+	min-width: 300px;
+}
+.errormsg {
+	background: none repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0;
+	text-indent: 30px;
+	border-bottom: 3px solid #84A7DB;
+	border-top: 3px solid #84A7DB;
+	color: #0055BB;
+	list-style: none outside none;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.ui-button {
+	margin-left: -1px;
+}
+.ui-button-icon-only .ui-button-text {
+	padding: 0.35em;
+}
+.ui-autocomplete-input {
+	width: 320px;
+	margin: 0;
+	padding: 0.48em 0 0.47em 0.45em;
+}
+.ui-autocomplete {
+	max-height: 200px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+	font-size: 0.8em;
+	text-align: left;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete {
+	height: 100px;
+}
+.search_box_user {
+	background-color: #095197;
+}
+#adformtable tr {
+	border: none;
+}
+#adformtable td {
+	border: none;
+}
+.adsmanager_inner_box td {
+	border: none;
+}
+.adsmanager_inner_box tr {
+	border: none;
+}
+.exceeded {
+	color: red;
+}
+.warning {
+	color: orange;
+}
+.adsmanager_subcats {
+	text-align: center;
+	padding: 3px 0;
+}
+.adsmanager_subcats a {
+	text-decoration: none;
+	font-weight: bold;
+}
+.adsmanager_results {
+	   text-align: left;
+    font-style: italic;
+    color: #555;
+}
+.addetails_left {
+	width: 100%;
+	/*float: left;*/
+	margin-bottom:20px;
+}
+.addetails_right {
+	/*width: 370px;*/
+	float: left;
+	overflow: hidden;
+	font-size:12px;
+}
+.ads_info_short {
+	background-color: #ffffff;	
+	
+}
+.box  .ads_info_short h3{
+background-image: url(../images/bg.png);
+background-repeat:repeat-x;
+background-position:0 -115px;
+color:#fff;
+font-size:13px;
+font-family:Arial, Helvetica, sans-serif;
+padding:5px 0 3px 0px;
+margin:0;
+text-transform:capitalize;
+border-top:1px solid #fefefe;
+height:20px;
+line-height:23px;
+}
+.box  .ads_info_short ul{ margin:0; padding:8px 0; color:#222;}
+.box  .ads_info_short ul li{list-style:none;margin-left:20px;padding:1px 0;}
+.box  .ads_info_short ul li span{display:inline-block; width:133px; font-weight:bold; text-align:right; padding-right:3px;}
+.ads_info_member {
+	background-color: #DAE8F2;
+}
+.box  .ads_info_member h3{
+background-image: url(../images/bg.png);
+background-repeat:repeat-x;
+background-position:0 -576px;
+/*border-bottom:1px solid #2067AF;*/
+color:#fff;
+font-size:13px;
+font-family:Tahoma;
+padding:2px 0 2px 0px;
+text-align:center;
+margin:0;
+font-weight:bold;
+font-family:Arial;
+}
+.box  .ads_info_member ul{ margin:0; padding:5px 0; color:#333; font-size:11px;}
+.box  .ads_info_member ul li{list-style:none;padding:3px 0 3px 23px; margin-left:5px;}
+.box  .ads_info_member ul li span{display:inline-block; width:60px; font-weight:bold; text-align:left; padding-right:3px;}
+.box  .ads_info_member ul li.icoName{background-image:url(../images/icoName.gif); background-repeat:no-repeat;background-position:0 3px; }
+.box  .ads_info_member ul li.icoAddress{background-image:url(../images/icoAddress.png); background-repeat:no-repeat;background-position:0 3px; }
+.box  .ads_info_member ul li.icoEmail{background-image:url(../images/icoEmail.png); background-repeat:no-repeat;background-position:0 3px; }
+.box  .ads_info_member ul li.icoTel{background-image:url(../images/icoTel.png); background-repeat:no-repeat;background-position:0 3px; }
+.addetailsmain{/*background-color:#fefefe; background-color:#ECECEC;*/}
+.addetailsmain dl.tabs{
+	float:left; 
+	width:100%;
+	background:url(../../../images/bg/tab.gif) repeat-x center bottom #fff;
+	height:50px;
+	margin-bottom:0;
+ } 
+.addetailsmain dl.tabs dt{float:left; padding:0; line-height:23px; height:22px; font-weight:bold; font-family:Arial; font-size:12px; color:#555; text-transform:capitalize; margin:0 5px}
+.addetailsmain .current{margin:0 13px; clear:both;}
+.addetailsmain dl.tabs dt.open{color:#333; border-bottom:2px solid #009DFF;}
+.adsmanager_ads_desc .block{float:left; width:30%}
+.block dt, tr.bg_grey {
+    background: none repeat scroll 0 0 #fefefe;
+}
+.adsmanager_ads_desc .block {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    width: 206px;
+}
+.adsmanager_ads_desc .block table{
+    border: 1px solid #ccc;
+    width: 100%;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.adsmanager_ads_desc .block td{
+    border: 1px solid #ccc;
+    font: 400 12px/17px arial;
+    padding: 5px;
+    width: 238px;
+}
+.ico_16 {
+    height: 16px;   
+    width: 16px;
+	background-image: url("../images/sprite.png");
+	background-repeat:no-repeat;
+	background-position:0 0;
+	display:block;
+	 margin: 0 auto;
+}
+.tb_size table{border:1px solid #ccc; width:95%; margin:5px auto;}
+.tb_size table thead tr th{padding:2px 5px; border:1px solid #ccc; text-align:center; width: 20%; height:15px;}
+.tb_size table tbody tr td{padding:2px 5px; height:15px; border:1px solid #ccc; text-align:center;}
+.d-price{ font-size: 18px;
+    font-style: italic;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 1em;
+    color: #0D8CDC;
+	text-align:right;}

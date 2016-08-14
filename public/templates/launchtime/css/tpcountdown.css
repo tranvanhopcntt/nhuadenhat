@@ -1,0 +1,33 @@
+.tpc_wrp {}
+.cntSeparator {
+    font-size: 54px!important;
+    margin: 10px 7px;
+    color: #fff;
+}
+.tpcdesc { margin: 7px 3px!important; }
+.tpcdesc div {
+    float: left;
+    font-family: Arial;
+    width: 70px;
+    margin-right: 65px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+}
+.tpc_pretext{
+    font-size: 36px!important;
+    letter-spacing: -1px;
+    line-height: 100%!important;
+    font-weight: 700;
+    margin-bottom: 20px!important;
+}
+.tpc_posttext {
+    font-size: 10px!important;
+    margin: 10px 0!important;
+}
+.tpc_posttext * {
+    font-size: 10px!important;
+}
+.tpc_pretext * {
+    font-size: 40px!important;
+}

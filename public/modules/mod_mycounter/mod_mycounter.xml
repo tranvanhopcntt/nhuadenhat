@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="1.6"
+    client="site"
+    method="upgrade">
+    <name>My Apple Style Counter Module.</name>
+    <author>Nima Nouri</author>
+    <authorUrl>http://gpiutmd.iut.ac.ir</authorUrl>
+    <creationDate>2012-08-01</creationDate>
+    <copyright>Copyright (c)2010-2011 by Nima Nouri</copyright>
+    <version>1.7.1</version>
+    <description><h3>My Apple Style counter module is a Java script based visitor counter.</h3><br />
+	<p style="color:red">Note: Any use of this software in/for immoral sites are forbidden.
+	Unauthorized distribution or use of this freeware, or any portion
+	of it in such websites, may result in severe civil and criminal
+	penalties, and will be prosecuted to the maximum extent possible
+	under the law.</p></description>
+    <license>http://www.gnu.org/licenses/gpl-3.0-standalone.html</license>
+    <files>
+        <filename module="mod_mycounter">mod_mycounter.php</filename>
+        <filename>index.html</filename>
+        <filename>README.txt</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/img/comma.png</filename>
+        <filename>tmpl/img/filmstrip.png</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="startnum"
+                    type="text"
+                    default="0"
+                    label="Start Number"
+                    description="The counter will start to count from this number."/>
+                <field
+                    name="interval"
+                    type="hidden"
+                    default="1000000"
+                    label="Interval"
+                    description="This number is used to control the speed of counter animation."/>
+                <field
+                    name="increment"
+                    type="hidden"
+                    default="1"
+                    label="Increment"
+                    description="The number is used to increament the number by this value for each hit. (visit count = increament * hits)"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

