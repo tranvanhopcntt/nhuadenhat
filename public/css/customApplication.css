@@ -1,7 +1,29 @@
-.carousel-inner .active.left { left: -33%; }
-.carousel-inner .next        { left:  33%; }
-.carousel-inner .prev        { left: -33%; }
-.carousel-control.left,.carousel-control.right {background-image:none;}
-.item:not(.prev) {visibility: visible;}
-.item.right:not(.prev) {visibility: hidden;}
-.rightest{ visibility: visible;}
+.gallery {
+    background: #EEE;
+}
+
+.gallery-cell {
+    width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+.gallery-cell {
+    width: 100%;
+}
+
+@media screen and ( min-width: 768px ) {
+    /* half-width cells for larger devices */
+    .gallery-cell { width: 50%; }
+}
