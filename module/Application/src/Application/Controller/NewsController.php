@@ -23,8 +23,44 @@ class NewsController extends AbstractActionController
 
     public function indexAction()
     {
-
         $this->layout()->setVariables($this->_variableLayout);
+        return $this->_view;
+    }
+
+    public function getNewsAction()
+    {
+        $this->_view->setTerminal(true);
+        $request = $this->getRequest();
+
+        if($request->isGet())
+        {
+            $commonDAO = $this->getServiceLocator()->get('CommonDAO');
+            $news = $commonDAO->executeQuery('NEWS_GET_ALL', array());
+            $this->_view->setVariable('news', $news);
+            $this->_view->setTemplate('application/news/template/items.phtml');
+        }
+
+        return $this->_view;
+    }
+
+    public function getNewsItemAction()
+    {
+        $this->_view->setTerminal(true);
+        $request = $this->getRequest();
+
+        $id = $this->getEvent()->getRouteMatch()->getParam('id');
+
+        if($request->isGet())
+        {
+            $commonDAO = $this->getServiceLocator()->get('CommonDAO');
+            $items = $commonDAO->executeQuery('NEWS_GET_BY_ID', array($id));
+            if(count($items) > 0)
+            {
+                $this->_view->setVariable('item', $items[0]);
+                $this->_view->setTemplate('application/news/template/item.phtml');
+            }
+        }
+
         return $this->_view;
     }
 }

@@ -1,0 +1,11 @@
+<?php foreach($this->news as $item) :?>
+    <div class="leading-0">
+        <div id="leading-<?=$item['id']?>">
+            <script>
+                $(document).ready(function () {
+                    getNewsItem(<?=$item['id']?>);
+                });
+            </script>
+        </div>
+    </div>
+<?php endforeach;?>
